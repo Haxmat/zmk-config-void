@@ -30,6 +30,10 @@
   #define EN_DOC LG(DOWN)
   #define PGUP LA(UP)
   #define PGDN LA(DOWN)
+
+  #define PSCRN LG(LS(3)
+  #define SLCK F14
+  #define PAUSE_BREAK F15
 #else
 // homerow mods
   #define M_IDX LCTRL
@@ -61,4 +65,8 @@
   #define EN_DOC LC(END)
   #define PGUP PG_UP
   #define PGDN PG_DN
+
+  #define PSCRN PSCRN
+  #define SLCK SLCK
+  #define PAUSE_BREAK PAUSE_BREAK
 #endif
