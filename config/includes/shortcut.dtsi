@@ -24,7 +24,7 @@
   #define LN_DEL LA(LC(D))
   #define CH_BSPC DEL
   #define LN_BSPC LA(DEL)
-  #define ST_LINE LG(LIFT)
+  #define ST_LINE LG(LEFT)
   #define EN_LINE LG(RIGHT)
   #define ST_DOC LG(UP)
   #define EN_DOC LG(DOWN)

@@ -106,15 +106,15 @@ layers:
   - {type: held}
   - {type: trans}
   NAV:
-  - TaskSW ←
-  - TaskSW →
+  - Gui+Sft+Tab
+  - Gui+Tab
   - Tab Left
   - Tab Right
-  - {t: Tab Close, h: Win Close}
+  - {t: Gui+W, h: Gui+Q}
   - Ins
-  - {t: Bspc, h: Ctl+Bspc}
-  - {t: ↑, h: Ctl+Home}
-  - {t: Del, h: Ctl+Del}
+  - {t: Del, h: Alt+Del}
+  - {t: ↑, h: Gui+↑}
+  - {t: Ctl+D, h: Alt+Ctl+D}
   - PgUp
   - Gui
   - Alt
@@ -122,15 +122,15 @@ layers:
   - Ctrl
   - ''
   - CAPS
-  - {t: ←, h: Home}
-  - {t: ↓, h: Ctl+End}
-  - {t: →, h: End}
+  - {t: ←, h: Gui+←}
+  - {t: ↓, h: Gui+↓}
+  - {t: →, h: Gui+→}
   - PgDn
-  - Undo
-  - Cut
-  - Copy
-  - Paste
-  - Redo
+  - Gui+Z
+  - Gui+X
+  - Gui+C
+  - Gui+V
+  - Gui+Sft+Z
   - ''
   - ''
   - ''
