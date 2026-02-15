@@ -19,6 +19,17 @@
   #define T_LFT LC(LS(TAB))
   #define W_RHT LG(TAB)
   #define W_LFT LG(LS(TAB))
+
+  #define CH_DEL LC(D)
+  #define LN_DEL LA(LC(LC(D)))
+  #define CH_BSPC DEL
+  #define LN_BSPC LA(DEL)
+  #define ST_LINE LG(LIFT)
+  #define EN_LINE LG(RIGHT)
+  #define ST_DOC LG(UP)
+  #define EN_DOC LG(DOWN)
+  #define PGUP LA(UP)
+  #define PGDN LA(DOWN)
 #else
 // homerow mods
   #define M_IDX LCTRL
@@ -43,11 +54,11 @@
   #define CH_DEL DEL
   #define LN_DEL LC(DEL)
   #define CH_BSPC BSPC
-  #define LN_DEL LC(BSPC)
+  #define LN_BSPC LC(BSPC)
   #define ST_LINE HOME
-  #define EN_LIN END
+  #define EN_LINE END
   #define ST_DOC LC(HOME)
   #define EN_DOC LC(END)
-  #define PG_UP &kp PG_UP
-  #define PG_DN &kp PG_DN
+  #define PGUP PG_UP
+  #define PGDN PG_DN
 #endif
