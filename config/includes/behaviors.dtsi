@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 
 #define QUICK_TAP_MS 175
-
+#define REQUIRE_PRIOR_IDLE_MS 190
 &mt {
     flavor = "hold-preferred";
     tapping-term-ms = <150>;
@@ -84,47 +84,45 @@ MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
         aml: alpha_mods_l {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <210>;
+            tapping-term-ms = <220>;
             quick-tap-ms = <QUICK_TAP_MS>;
             require-prior-idle-ms = <165>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
-            retro-tap;
             hold-trigger-on-release;
+            require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;
         };
         asl: alpha_shift_l {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <QUICK_TAP_MS>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
-            /* retro-tap; */
             hold-trigger-on-release;
         };
         amr: alpha_mods_r {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <210>;
+            tapping-term-ms = <220>;
             quick-tap-ms = <QUICK_TAP_MS>;
             require-prior-idle-ms = <165>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
-            /* retro-tap; */
             hold-trigger-on-release;
+            require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;
         };
         asr: alpha_shift_r {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <QUICK_TAP_MS>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;     //같은 손에서 f를 누르고 tapping-term 시간 내에 a가 눌리면 mod+a가 아니라 fa로 출력 tap으로 인식 
-            /* retro-tap; */                                  //tapping-term 시간이 지나도 다른키를 안누르면 tap으로 인식 
             hold-trigger-on-release;                          //지정한 포지션 외에 tapping-term 시간내에 다른 키가 눌려도 먼저 눌린 키를 릴리즈로 인식 flavor문제 해결때
         };
         ht: hold_tap {

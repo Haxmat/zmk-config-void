@@ -118,10 +118,10 @@ layers:
   - {type: trans}
   - {type: trans}
   NAV:
-  - TaskSW ←
-  - TaskSW →
-  - Tab Left
-  - Tab Right
+  - Prev Win
+  - '&sw_c'
+  - Prev Win
+  - '&sw_a'
   - {t: Tab Close, h: Win Close}
   - Ins
   - {t: Bspc, h: Ctl+Bspc}
@@ -196,15 +196,6 @@ layers:
   - {type: trans}
   - {type: trans}
 combos:
-- p: [1, 2]
-  k: '@'
-  l: [DEF]
-- p: [2, 3]
-  k: '#'
-  l: [DEF]
-- p: [0, 1]
-  k: Esc
-  l: [DEF]
 - p: [12, 13]
   k: (
   l: [DEF]
@@ -217,11 +208,6 @@ combos:
 - p: [17, 18]
   k: ']'
   l: [DEF]
-- p: [18, 16]
-  k: Alt
-  l: [DEF]
-  a: bottom
-  o: -0.2
 - p: [27, 28]
   k: ;
   l: [DEF]
