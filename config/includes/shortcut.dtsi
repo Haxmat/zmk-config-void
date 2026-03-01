@@ -13,13 +13,15 @@
   #define C_UND LG(Z)
   #define C_ALL LG(A)
 // Desktop and tab navigation shortcuts
-  #define W_CLS LA(LG(ESC))
+  #define W_CLS LG(Q))
   #define T_CLS LG(W)
+  #define T_RHT sw_c
+/*
   #define T_RHT LC(TAB)
   #define T_LFT LC(LS(TAB))
   #define W_RHT LG(TAB)
   #define W_LFT LG(LS(TAB))
-
+*/
   #define CH_DEL LC(D)
   #define WD_DEL LA(DEL)
   #define CH_BSPC BSPC
@@ -55,10 +57,12 @@
 // Desktop and tab navigation shortcuts
   #define W_CLS LA(F4)
   #define T_CLS LC(F4)
+/*
   #define T_RHT LC(TAB)
-  #define T_LFT LC(LS(TAB))
+  #define T_LFT LS(TAB)
   #define W_RHT LA(TAB)
   #define W_LFT LA(LS(TAB))
+*/
 
   #define CH_DEL DEL
   #define WD_DEL LC(DEL)
