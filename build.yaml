@@ -3,7 +3,7 @@
 include:
 
  # sweep
-  - board: xiao_ble
+  - board: nice_nano@2
     shield: sweep_dongle
     artifact-name: sweep_dongle
   - board: nice_nano@2
