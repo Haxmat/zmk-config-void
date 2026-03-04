@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: caksoylar
       url-base: https://github.com/caksoylar
-    - name: urob
-      url-base: https://github.com/urob
 
   projects:
     - name: zmk
@@ -19,12 +17,6 @@ manifest:
       revision: v0.3
     - name: zmk-rgbled-widget
       remote: caksoylar
-      revision: v0.3
-    - name: zmk-auto-layer
-      remote: urob
-      revision: v0.3
-    - name: zmk-helpers
-      remote: urob
       revision: v0.3
 
   self:
