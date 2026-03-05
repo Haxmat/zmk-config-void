@@ -62,8 +62,8 @@
             bindings = <LAYER_FROM38( \
 //           ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
               &kp LS(TAB),   &T_RHT,        &kp LS(TAB),   &W_RHT,        &ht W_CLS T_CLS,   &kp INS,  &ht WD_BSPC CH_BSPC, &ht ST_DOC UP, &ht WD_DEL CH_DEL, &kp PG_UP, \
-              &kp M_PNK,     &kp M_RNG,     &kp M_MDL,     &kp M_IDX,     &kp DEL,           &kp CAPS, &ht LN_STR LEFT,    &ht EN_DOC DOWN, &ht LN_END RIGHT, &kp PG_DN, \
-&kp L_EXP,    &kp C_UND,     &kp C_CUT,     &kp C_CPY,     &kp C_PST,     &kp C_RDO,         &key_repeat,   &kp C_PREV,    &kp C_NEXT,    &kp C_VOL_DN,  &kp C_VOL_UP, &kp R_EXP, \
+              &kp M_PNK,     &kp M_RNG,     &kp M_MDL,     &kp M_IDX,     &none,             &kp CAPS, &ht LN_STR LEFT,    &ht EN_DOC DOWN, &ht LN_END RIGHT, &kp PG_DN, \
+&kp L_EXP,    &kp C_UND,     &kp C_CUT,     &kp C_CPY,     &kp C_PST,     &kp C_RDO,         &kp DEL,       &kp C_PREV,    &kp C_NEXT,    &kp C_VOL_DN,  &kp C_VOL_UP, &kp R_EXP, \
                                             &trans,        &trans,        &trans,            &kp RET,       &kp BSPC,      &kp DEL \
 //                                         ╰──────────────┴──────────────┴──────────────╯   ╰──────────────┴──────────────┴──────────────╯
             )>;
@@ -73,7 +73,7 @@
             display-name = "SYS";
             bindings = <LAYER_FROM38( \
 //           ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
-              &rst_boot 0 0, &none,         &soft_off,     &kp LOCK,      &none,             &none,         &kp KP_N7,     &kp KP_N8,     &kp KP_N9,     &rst_boot 0 0, \
+              &rst_boot 0 0, &none,         &none,         &kp LOCK,      &soft_off,         &soft_off,     &kp KP_N7,     &kp KP_N8,     &kp KP_N9,     &rst_boot 0 0, \
               &kp M_PNK,     &kp M_RNG,     &kp M_MDL,     &kp M_IDX,     &none,             &none,         &kp KP_N4,     &kp KP_N5,     &kp KP_N6,     &none, \
 &kp L_EXP,    &bt BT_CLR_ALL, &bt BT_SEL 0, &bt BT_SEL 1,  &bt BT_SEL 2,  &bt BT_CLR,        &none,         &kp KP_N1,     &kp KP_N2,     &kp KP_N3,     &none,        &kp R_EXP, \
                                             &trans,        &trans,        &trans,            &none,         &kp KP_N0,     &trans \
