@@ -66,10 +66,19 @@ parse_config:
     "&mkp MB4": Back Click
     "&mkp MB5": Forward Click
 
+    "&kp LC(D)": Del
     "&kp LC(DEL)": Wrd Del
     "&kp LA(DEL)": Wrd Del
     "&kp LC(BSPC)": Wrd Bspc
     "&kp LA(BSPC)": Wrd Bspc
+
+    "&kp LC(D)": Del
+    "&kp LG(LEFT)": Home
+    "&kp LG(RIGHT)": End
+    "&kp LC(UP)": Doc Str
+    "&kp LC(DOWN)": Doc End
+    "&kp LG(UP)": Doc Str
+    "&kp LG(DOWN)": Doc End
 
     '&kp LG(L)': Lock
     '&kp LC(LG(Q))': Lock
@@ -89,7 +98,7 @@ parse_config:
 
   zmk_combos:
     combo_star:   {align: top}
-    combo_star_n:   {align: top}
+    combo_star_n:   {align: top, o: 1.5}
     
   zmk_keycode_map:
     # custom mappings

@@ -113,8 +113,8 @@ layers:
   - {t: Tab Close, h: Win Close}
   - Ins
   - {t: Bspc, h: Wrd Bspc}
-  - {t: ↑, h: Gui+↑}
-  - {t: Ctl+D, h: Wrd Del}
+  - {t: ↑, h: Doc Str}
+  - {t: Del, h: Wrd Del}
   - PgUp
   - Gui
   - Alt
@@ -122,9 +122,9 @@ layers:
   - Ctrl
   - ''
   - CAPS
-  - {t: ←, h: Gui+←}
-  - {t: ↓, h: Gui+↓}
-  - {t: →, h: Gui+→}
+  - {t: ←, h: Home}
+  - {t: ↓, h: Doc End}
+  - {t: →, h: End}
   - PgDn
   - Undo
   - Cut
@@ -253,6 +253,7 @@ combos:
   k: KP*
   l: [SYS]
   a: top
+  o: 1.5
 - p: [16, 7]
   k: KP/
   l: [SYS]
