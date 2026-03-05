@@ -191,6 +191,9 @@ combos:
 - p: [17, 18]
   k: ']'
   l: [DEF]
+- p: [11, 12]
+  k: '&key_repeat'
+  l: [NAV]
 - p: [26, 27]
   k: ;
   l: [DEF]
@@ -266,4 +269,4 @@ combos:
   o: -0.2
 - p: [7, 8]
   k: Tab
-  l: [NUM]
+  l: [SYS]
