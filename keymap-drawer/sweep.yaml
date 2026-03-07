@@ -194,7 +194,7 @@ combos:
 - p: [11, 12]
   k: All
   l: [NAV]
-- p: [11, 13]
+- p: [12, 13]
   k: '&key_repeat'
   l: [NAV]
 - p: [26, 27]
